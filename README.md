@@ -23,11 +23,11 @@ Chichewa Bible pip package: Access and integrate the Chichewa translation of the
 You can install the Chichewa Bible python package using pip:
 
 ```
-pip install bible_chichewa
+pip install bible-chichewa
 ```
 
 ## Examples
-To use the bible_chichewa library to retrieve a verse from the Chichewa Bible, follow these steps:
+To use the bible-chichewa library to retrieve a verse from the Chichewa Bible, follow these steps:
 
 ### Example: Retrieving a Bible Verse
 ```
