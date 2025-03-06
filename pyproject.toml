@@ -7,7 +7,7 @@ packages = ["src/bible-chichewa"]
 
 [project]
 name = "bible-chichewa"
-version = "1.0.3"
+version = "1.0.4"
 authors = [
   { name="M2K Developments", email="m2kdevelopments@gmail.com" },
 ]
