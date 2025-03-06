@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name='bible_chichewa',
-    version='1.0.1',
+    version='1.0.3',
     packages=find_packages('src'),
     package_dir = {'':'src'},
     classifiers=[
