@@ -23,7 +23,7 @@ Chichewa Bible pip package: Access and integrate the Chichewa translation of the
 You can install the Chichewa Bible python package using pip:
 
 ```
-pip install chichewa-bible
+pip install bible-chichewa
 ```
 
 ## Examples
