@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 setup(
-    name='bible-chichewa',
+    name='bible_chichewa',
     version='1.0.0',
     packages=find_packages('src'),
     package_dir = {'':'src'},
