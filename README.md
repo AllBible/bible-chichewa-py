@@ -31,7 +31,7 @@ To use the bible-chichewa library to retrieve a verse from the Chichewa Bible, f
 
 ### Example: Retrieving a Bible Verse
 ```
-Bible = __import__("bible-chichewa").Bible
+from biblechichewa import Bible
 bible = Bible()
 books = bible.getBooks()
 print(f"There are {len(books)} books in the bible")
@@ -49,7 +49,7 @@ print(f"{book} {chapter}:{verse}: {verseText}")
 ### Example: Retrieving a Bible Chapter
 
 ```
-Bible = __import__("bible-chichewa").Bible
+from biblechichewa import Bible
 bible = Bible()
 books = bible.getBooks()
 bookNumber = 1  # Genesis
@@ -68,7 +68,7 @@ for i in range(0, len(chapterVerses)):
 
 ### Example: Retrieving a Bible Verses within Range
 ```
-Bible = __import__("bible-chichewa").Bible
+from biblechichewa import Bible
 bible = Bible()
 
 books = bible.getBooks()
