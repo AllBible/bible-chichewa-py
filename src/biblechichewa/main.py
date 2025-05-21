@@ -19,7 +19,7 @@ class Bible:
 
         :return: A list of Bible book names.
         """
-        relative_path = "..\\content\\books.json"
+        relative_path = "content\\books.json"
         absolute_path = os.path.join(self.current_directory, relative_path)
 
         with open(absolute_path, "r") as json_file:
@@ -34,7 +34,7 @@ class Bible:
         :param chapter: The chapter number.
         :return: A dictionary containing the chapter's verses.
         """
-        relative_path = f"..\\resources\\{book}\\{chapter}.json"
+        relative_path = f"resources\\{book}\\{chapter}.json"
         absolute_path = os.path.join(self.current_directory, relative_path)
 
         with open(absolute_path, "r") as json_file:
@@ -52,7 +52,7 @@ class Bible:
         """
         return self.get_chapter(book, chapter)[verse]
 
-    def get_verses(self, book:int, chapter: int, verseStart: int, verseEnd: int):
+    def get_verses(self, book:int, chapter: int, verse_start: int, verse_end: int):
         """
         Get a range of verses from a chapter in a book of the Bible.
 
@@ -62,7 +62,7 @@ class Bible:
         :param verseEnd: The ending verse number.
         :return: A list containing the verses within the specified range.
         """
-        return self.get_chapter(book, chapter)[verseStart-1:verseEnd]
+        return self.get_chapter(book, chapter)[verse_start-1:verse_end]
 
     def get_chapter_count(self, book: int):
         """
@@ -71,7 +71,7 @@ class Bible:
         :param book: The index of the Bible book (1-based).
         :return: The number of chapters in the book.
         """
-        relative_path = "..\\content\\books.json"
+        relative_path = "content\\books.json"
         absolute_path = os.path.join(self.current_directory, relative_path)
 
         with open(absolute_path, "r") as json_file:
