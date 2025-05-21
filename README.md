@@ -33,16 +33,16 @@ To use the bible-chichewa library to retrieve a verse from the Chichewa Bible, f
 ```
 from biblechichewa import Bible
 bible = Bible()
-books = bible.getBooks()
+books = bible.get_books()
 print(f"There are {len(books)} books in the bible")
 
-bookNumber = 1  # Genesis
-book = books[bookNumber-1]
+book_number = 1  # Genesis
+book = books[book_number-1]
 chapter = 1
 verse = 1
 
-verseText = bible.getVerse(bookNumber, chapter, verse)
-print(f"{book} {chapter}:{verse}: {verseText}")
+verse_text = bible.get_verse(book_number, chapter, verse)
+print(f"{book} {chapter}:{verse}: {verse_text}")
 ```
 
 
@@ -51,13 +51,13 @@ print(f"{book} {chapter}:{verse}: {verseText}")
 ```
 from biblechichewa import Bible
 bible = Bible()
-books = bible.getBooks()
-bookNumber = 1  # Genesis
-book = books[bookNumber-1]
+books = bible.get_books()
+book_number = 1  # Genesis
+book = books[book_number-1]
 
 chapter = 1 
 
-chapterVerses = bible.getChapter(bookNumber, chapter)
+chapterVerses = bible.get_chapter(book_number, chapter)
 
 print(f"Chapter {book} {chapter}:")
 for i in range(0, len(chapterVerses)):
@@ -71,20 +71,20 @@ for i in range(0, len(chapterVerses)):
 from biblechichewa import Bible
 bible = Bible()
 
-books = bible.getBooks()
-bookNumber = 2 ## Exodus
-book = books[bookNumber-1]
+books = bible.get_books()
+book_number = 2 ## Exodus
+book = books[book_number-1]
 
 chapter = 20
-verseStart = 1
-verseEnd = 5
+verse_start = 1
+verse_end = 5
 
-verses = bible.getVerses(bookNumber, chapter, verseStart, verseEnd)
+verses = bible.get_verses(book_number, chapter, verse_start, verse_end)
 
-print(f"{book} {chapter}:{verseStart}-{verseEnd}:")
+print(f"{book} {chapter}:{verse_start}-{verse_end}:")
 for index in range(0, len(verses)):
     verse = verses[index]
-    print(f"{verseStart + index}: {verse}\n")
+    print(f"{verse_start + index}: {verse}\n")
 
 ```
 
